@@ -2,7 +2,7 @@
 function FindProxyForURL(url, host) {
 
 	//        ****************************************************************************
-	//        This is an example PAC file that should be edited prior to being put to use.
+	//        XXX_PAC_BUILDER_XXX
 	//        ****************************************************************************
 	    
 	//        Consider the following:
@@ -15,6 +15,7 @@ function FindProxyForURL(url, host) {
 	//           to the internet directly
 
 	//        ====== Section I ==== Internal/Specific Destinations ============================== 
+
 
 	//        Most special use IPv4 addresses (RFC 5735) defined within this regex.
 	var privateIP = /^(0|10|127|192\.168|172\.1[6789]|172\.2[0-9]|172\.3[01]|169\.254|192\.88\.99)\.[0-9.]+$/;

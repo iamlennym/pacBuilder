@@ -150,6 +150,12 @@ foreach $tl (@templateLines) {
 		}
 	}
 
+	if ($tl =~ /XXX_PAC_BUILDER_XXX/) {
+		my $TIMESTAMP = localtime();
+        $tl =~ s/XXX_PAC_BUILDER_XXX/This PAC file was generated from $ARGV[0] on $TIMESTAMP./g;
+		# $tl =~ s/XXX_PAC_BUILDER_XXX/This PAC file was generated from $ARGV[0]./g;
+	}
+
 	printf ("%s\n", $tl);
 }
 
